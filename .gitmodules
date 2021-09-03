@@ -1,0 +1,4 @@
+[submodule "extern/GPMF"]
+	path = extern/GPMF
+	url = https://github.com/faalbers/GPMF.git
+	branch = stable
