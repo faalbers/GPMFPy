@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.4)
+project(GPMFPy VERSION 0.1.0)
+
+set(CMAKE_CXX_STANDARD 20)
+
+execute_process(COMMAND git submodule update --init --recursive
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+
+#add_compile_definitions(MP4_PARSE_PATH)
+#add_compile_definitions(MP4_PARSE_DATA)
+#add_compile_definitions(MP4_PARSE_TIME)
+#add_compile_definitions(GPMF_PARSE_PATH)
+#add_compile_definitions(GPMF_PARSE_DATA)
+#add_compile_definitions(GPMF_PARSE_TIME)
+
+add_subdirectory(extern/GPMF)
+
