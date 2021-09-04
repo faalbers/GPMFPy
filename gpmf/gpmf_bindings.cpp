@@ -34,5 +34,6 @@ PYBIND11_MODULE(gpmf_bindings, m)
         .def("printHierarchy", &GPMF::GPMF::printHierarchy)
         .def("getAcceleration", &GPMF::GPMF::getAcceleration)
         .def("getGyroscope", &GPMF::GPMF::getGyroscope)
+        .def("exportGPStoGPX", &GPMF::GPMF::exportGPStoGPX)
         ;
 }
