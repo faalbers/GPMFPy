@@ -1,2 +1,4 @@
 /build
 *.json
+*.pyc
+*.mp4
