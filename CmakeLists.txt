@@ -13,5 +13,8 @@ execute_process(COMMAND git submodule update --init --recursive
 #add_compile_definitions(GPMF_PARSE_DATA)
 #add_compile_definitions(GPMF_PARSE_TIME)
 
+find_package (Python3 COMPONENTS Interpreter Development)
+add_subdirectory(extern/pybind11)
 add_subdirectory(extern/GPMF)
+add_subdirectory(gpmf)
 
