@@ -4,7 +4,7 @@ import sys
 import PySide2
 import matplotlib.pyplot as plt
 
-myTest = GPMF("gopro6.mp4")
+myTest = GPMF("../testvideos/gopro8_final.mp4")
 samples = myTest.getGyroscope()
 time = []
 z = []
